@@ -13,29 +13,190 @@
 
 <body>
     <nav class="main-menu">
-        <img class="main-menu_logo" src="./assets/images/logo.svg">
         <ul class="main-menu_list">
-            <li class="main-menu_list_item"><a class="main-menu_list_item_link" href="#">lien 1</a></li>
-            <li class="main-menu_list_item"><a class="main-menu_list_item_link" href="#">lien 2</a></li>
-            <li class="main-menu_list_item"><a class="main-menu_list_item_link" href="#">lien 3</a></li>
-            <li class="main-menu_list_item"><a class="main-menu_list_item_link" href="#">lien 4</a></li>
-            <li class="main-menu_list_item"><a class="main-menu_list_item_link" href="#">lien 5</a></li>
+            <li class="main-menu_list_item"><a class="main-menu_list_item_link" href="#"><img src="assets/img/icon_home.png" alt=""></a></li>
+            <li class="main-menu_list_item"><a class="main-menu_list_item_link" href="#"><img src="assets/img/icon_search.png" alt=""></a></li>
+            <li class="main-menu_list_item"><a class="main-menu_list_item_link" href="#"><img src="assets/img/icon_shopping_cart.png" alt=""></a></li>
+            <li class="main-menu_list_item"><a class="main-menu_list_item_link" href="#"><img src="assets/img/icon_user.png" alt=""></a></li>
         </ul>
-        <button class="main-menu_toggler">
-          <span class="main-menu_toggler_line"></span>
-          <span class="main-menu_toggler_line"></span>
-          <span class="main-menu_toggler_line"></span>
-        </button>
     </nav>
 
     <header>
-
+        <div class="header-top">
+            <div class="delivery">
+                <h2>Livrer maintenant</h2>
+                <select name="" id="">
+                    <option value=""></option>
+                    <option value="">U</option>
+                    <option value="">T</option>
+                    <option value="">E</option>
+                </select>
+            </div>
+            <div class="logo">
+                <img src="./assets/img/logo.png" alt="">
+            </div>
+        </div>
+        <h1 class="spacecake">Space<span>C</span>ake</h1>
+        <div class="search-bar">
+            <form action="">
+                <input type="search" placeholder="Trouvez votre plat !" name="" id="">
+                <img src="assets/img/icon_search.png" alt="">
+            </form>
+        </div>
     </header>
 
     <main>
-        <section>
-            <div class="btn">Devis</div>
+        <section class="categories">
+            <h2>Catégories</h2>
+            <div class="categories-container">
+                <div class="categories-container_single categories-container_single--active">
+                    <img src="assets/img/mars.png" alt="">
+                    <h3>Nom planète</h3>
+                </div>
+
+                <div class="categories-container_single">
+                    <img src="assets/img/mars.png" alt="">
+                    <h3>Nom planète</h3>
+                </div>
+
+                <div class="categories-container_single">
+                    <img src="assets/img/mars.png" alt="">
+                    <h3>Nom planète</h3>
+                </div>
+
+                <div class="categories-container_single">
+                    <img src="assets/img/mars.png" alt="">
+                    <h3>Nom planète</h3>
+                </div>
+                
+                <div class="categories-container_single">
+                    <img src="assets/img/mars.png" alt="">
+                    <h3>Nom planète</h3>
+                </div>
+
+                <div class="categories-container_single">
+                    <img src="assets/img/mars.png" alt="">
+                    <h3>Nom planète</h3>
+                </div>
+            </div>
         </section>
+
+        <section class="popular">
+            <h2>Popular</h2>
+            <div class="popular-container">
+                <div class="popular-container_single">
+                    <img src="assets/img/plat.png" alt="">
+                    <div class="popular-container_single_content">
+                        <p>Nom bouffe</p>
+                        <p>Planète machin</p>
+                        <p class="price">12.99€</p>
+                    </div>
+                </div>
+
+                <div class="popular-container_single">
+                    <img src="assets/img/plat.png" alt="">
+                    <div class="popular-container_single_content">
+                        <p>Nom bouffe</p>
+                        <p>Planète machin</p>
+                        <p class="price">12.99€</p>
+                    </div>
+                </div>
+
+                <div class="popular-container_single">
+                    <img src="assets/img/plat.png" alt="">
+                    <div class="popular-container_single_content">
+                        <p>Nom bouffe</p>
+                        <p>Planète machin</p>
+                        <p class="price">12.99€</p>
+                    </div>
+                </div>
+
+                <div class="popular-container_single">
+                    <img src="assets/img/plat.png" alt="">
+                    <div class="popular-container_single_content">
+                        <p>Nom bouffe</p>
+                        <p>Planète machin</p>
+                        <p class="price">12.99€</p>
+                    </div>
+                </div>
+
+                <div class="popular-container_single">
+                    <img src="assets/img/plat.png" alt="">
+                    <div class="popular-container_single_content">
+                        <p>Nom bouffe</p>
+                        <p>Planète machin</p>
+                        <p class="price">12.99€</p>
+                    </div>
+                </div>
+
+                <div class="popular-container_single">
+                    <img src="assets/img/plat.png" alt="">
+                    <div class="popular-container_single_content">
+                        <p>Nom bouffe</p>
+                        <p>Planète machin</p>
+                        <p class="price">12.99€</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="other">
+            <div class="other-container">
+                <div class="other-container_single">
+                    <div class="other-container_single_content">
+                        <div>
+                            <p>Nom bouffe</p>
+                            <p>Planète machin</p>
+                        </div>
+                        <p class="price">12.99€</p>
+                    </div>
+                    <div class="other-container_single_image">
+                        <img src="assets/img/plat.png" alt="">
+                    </div>
+                </div>
+
+                <div class="other-container_single">
+                    <div class="other-container_single_content">
+                        <div>
+                            <p>Nom bouffe</p>
+                            <p>Planète machin</p>
+                        </div>
+                        <p class="price">12.99€</p>
+                    </div>
+                    <div class="other-container_single_image">
+                        <img src="assets/img/plat.png" alt="">
+                    </div>
+                </div>
+
+                <div class="other-container_single">
+                    <div class="other-container_single_content">
+                        <div>
+                            <p>Nom bouffe</p>
+                            <p>Planète machin</p>
+                        </div>
+                        <p class="price">12.99€</p>
+                    </div>
+                    <div class="other-container_single_image">
+                        <img src="assets/img/plat.png" alt="">
+                    </div>
+                </div>
+
+                <div class="other-container_single">
+                    <div class="other-container_single_content">
+                        <div>
+                            <p>Nom bouffe</p>
+                            <p>Planète machin</p>
+                        </div>
+                        <p class="price">12.99€</p>
+                    </div>
+                    <div class="other-container_single_image">
+                        <img src="assets/img/plat.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <div class="spacer"></div>
     </main>
 
     <footer>
