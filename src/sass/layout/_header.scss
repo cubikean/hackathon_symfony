@@ -1,5 +1,6 @@
 @use '../helpers/colors' as *;
 @use '../helpers/breakpoints' as *;
+@use '../base/typography' as *;
 
 .header-top{
     padding: 0 20px;
@@ -9,6 +10,24 @@
     color: white;
 
     .delivery{
+            margin-top: 10px;
+            h2{
+    font-family: $Light;
+
+            }
+            select{
+            margin-top: 10px;
+            width: 50px;
+            height: 30px;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: white;
+
+            &:focus-visible{
+                outline: none;
+            }
+        }
     }
 }
 
@@ -41,14 +60,17 @@
     }
     
 }
-h1{
-    color: white;
-    font-size: 32px;
-}
+
 
 .spacecake{
     text-align: center;
+    color: white;
+    font-size: 32px;
+    font-family: $Regular;
+
     span{
         color: $yellow;
+    font-family: $Regular;
+
     }
 }

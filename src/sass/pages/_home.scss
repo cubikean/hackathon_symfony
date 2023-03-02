@@ -1,11 +1,16 @@
 @use '../helpers/colors' as *;
 @use '../helpers/breakpoints' as *;
 @use '../components/button' as *;
+@use '../base/typography' as *;
+
 
 body{
     background: linear-gradient(178.25deg, rgba(0, 0, 0, 0.96) 2.96%, rgba(43, 13, 108, 1) 50.47%);
 }
 
+p, h2, h3, ::placeholder{
+    font-family: $Light;
+}
 
 main {
     padding-top: 50px;
@@ -16,6 +21,8 @@ main {
 
         h2{
             color: white;
+            font-family: $Light;
+
         }
 
         &-container{
@@ -39,7 +46,7 @@ main {
                 min-width: fit-content;
                 scroll-snap-align: start;
                 
-
+               
                 &--active{
                     background-color: $violet;
                 }
