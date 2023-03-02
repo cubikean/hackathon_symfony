@@ -1,11 +1,11 @@
-$light : 'HirukoPro-Light';
-$extra-light : 'Gilroy-ExtraBold';
+$Light : 'HirukoPro-Light';
 $Regular : 'HirukoPro-Regular';
-$Bold : 'Gilroy-ExtraBold';
-$Book : 'HirukoPro-Book';
+$Bold : 'HirukoPro-Bold';
 
-
-
+@font-face {
+    font-family: 'HirukoPro-Light';
+    src: url('../../assets/fonts/HirukoPro-Light.woff2') format("woff2");
+}
 
 @font-face {
     font-family: 'HirukoPro-Regular';
@@ -13,12 +13,7 @@ $Book : 'HirukoPro-Book';
 }
 
 @font-face {
-    font-family: 'HirukoPro-Book';
-    src: url('../../assets/fonts/HirukoPro-book.woff2') format("woff2");
-}
+    font-family: 'HirukoPro-Bold';
+    src: url('../../assets/fonts/HirukoPro-Bold.woff2') format("woff2");
 
-@font-face {
-    font-family: 'HirukoPro-Light';
-    src: url('../../assets/fonts/HirukoPro-Light.woff2') format("woff2");
 }
-
