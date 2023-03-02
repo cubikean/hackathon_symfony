@@ -1,13 +1,101 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Produits</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <main></main>
-</body>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main class="produits_main">
+      <img
+        class="fleche_retour"
+        src="./assets/img/fleche_retour.svg"
+        alt="fleche_retour"
+      />
+
+      <header class="produits_header">
+        <img
+          src="./assets/img/plat1.svg"
+          alt="plat1"
+          class="produit_img_plat"
+        />
+
+        <h1>Nebula Noodles</h1>
+
+        <img
+          src="./assets/img/ajout_favori.svg"
+          alt="ajout favoris"
+          class="produit_ajout_favoris"
+        />
+      </header>
+
+      <section class="produits_information">
+        <h2>Informations</h2>
+
+        <div class="informations_container">
+          <img src="./assets/img/star.svg" alt="star logo favoris" />
+          <p>4.5</p>
+
+          <img src="./assets/img/time.svg" alt="time logo" />
+          <p>18 min</p>
+
+          <img src="./assets/img/arrow.svg" alt="arrow logo" />
+          <p>3 années lumière</p>
+        </div>
+
+        <p class="informations_text">
+          Nebula Noodles - des nouilles faites à partir d'une pâte
+          extraterrestre et servies avec une sauce galactique sucrée et épicée.
+        </p>
+      </section>
+
+      <section class="produits_information">
+        <h2>Suppléments</h2>
+
+        <div class="informations_container">
+
+          <p class="add_title">Choix de 2 sauces</p>
+
+
+
+        </div>
+
+
+        <ul>
+            <li><input type="checkbox" name="algerienne" id="algerienne"> <label for="algerienne">Algerienne</label></li>
+            <li><input type="checkbox" name="Curry" id="Curry"> <label for="Curry">Curry</label></li>
+            <li><input type="checkbox" name="Brazil" id="Brazil"> <label for="Brazil">Brazil</label></li>
+            <li><input type="checkbox" name="Ketchup" id="Ketchup"> <label for="Ketchup">Ketchup</label></li>
+            <li><input type="checkbox" name="Mayonnaise" id="Mayonnaisse"> <label for="Mayonnaisse">Mayonnaisse</label></li>
+            <li><input type="checkbox" name="Samurai" id="Samurai"> <label for="algerienne">Samurai</label></li>
+        </ul>
+
+        <div class="informations_container">
+
+            <p class="add_title">Choix d'une viande</p>
+  
+  
+  
+          </div>
+  
+       
+  
+          <ul>
+              <li><input type="checkbox" name="Boeuf" id="Boeuf"> <label for="Boeuf">Boeuf</label></li>
+              <li><input type="checkbox" name="Agneau" id="Agneau"> <label for="Agneau">Agneau</label></li>
+              <li><input type="checkbox" name="Canard" id="Canard"> <label for="Canard">Canard</label></li>
+              <li><input type="checkbox" name="Porc" id="Porc"> <label for="Porc">Porc</label></li>
+              <li><input type="checkbox" name="Poulet" id="Poulet"> <label for="Poulet">Poulet</label></li>
+              <li><input type="checkbox" name="Lapin" id="Lapin"> <label for="Lapin">Lapin</label></li>
+          </ul>
+  
+      </section>
+
+
+      <button class="button_panier">Ajouter au panier</button>
+      
+    </main>
+  </body>
 </html>
