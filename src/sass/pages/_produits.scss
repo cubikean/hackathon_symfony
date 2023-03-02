@@ -33,7 +33,7 @@
     }
     h1 {
       color: white;
-      font-family: $Book;
+      font-family: $Regular;
       font-size: 20px;
       padding-top: 24px;
     }
@@ -49,12 +49,14 @@
     border: 0px solid;
     border-radius: 10px;
     color: white;
-    font-family: $Book;
-    padding: 1rem 6.75rem;
+    font-family: $Regular;
+    padding: 1rem;
+    width: calc(100% - 2rem);
     text-align: center;
     margin-top: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    margin-bottom: 2rem;
     font-size: 20px;
   }
   .produits_information {
@@ -79,7 +81,7 @@
             align-items: center;
             label{
                 color: white;
-                font-family: $light;
+                font-family: $Light;
             }
             input{
                 border: 1px solid #ccc; /* enlever la bordure ici */
@@ -107,7 +109,7 @@
         }
     }
     .informations_text{
-        font-family: $light;
+        font-family: $Light;
         color: white;
         padding-top: 20px;
     }
@@ -119,7 +121,7 @@
       padding-top: 10px;
       p {
         color: white;
-        font-family: $light;
+        font-family: $Light;
         
      
       }
@@ -132,7 +134,7 @@
       }
       .add_title{
         color: $green;
-        font-family: $Book;
+        font-family: $Regular;
       }
     }
   }

@@ -4,15 +4,6 @@
 @use '../base/typography' as *;
 
 
-.panier{
-    background: linear-gradient(
-        178.25deg, 
-        rgba(0, 0, 0, 0.96) 2.96%,
-         rgba(43, 13, 108, 0.75) 50.47%
-         );
-    height: 100vh;
-    background-repeat: no-repeat;     
-}
 
 .menu {
     display: flex;
@@ -43,7 +34,7 @@ main .planete {
     background: #7F5AF0;
     border-radius: 22.5px;
     color: white;
-    font-family: $light;
+    font-family: $Light;
     margin-left: 20px;
 }
 main .planete img {
@@ -55,7 +46,7 @@ main .planete img {
 
 .plat {
     color: white;
-    font-family: $light;
+    font-family: $Light;
     font-size: 1.2rem;
     display: flex;
     justify-content: space-between;
@@ -70,7 +61,7 @@ main .planete img {
 
 .recapitulatif {
     color: white;
-    font-family: $Book;
+    font-family: $Regular;
     display: flex;
     justify-content: space-between;
     margin: 30px;
@@ -79,7 +70,7 @@ main .planete img {
 
 .recapitulatif2 {
     color: white;
-    font-family: $Book;
+    font-family: $Regular;
     display: flex;
     justify-content: space-between;
     margin: 30px;
@@ -98,7 +89,7 @@ main .planete img {
 
 .tarif-total {
     color: white;
-    font-family: $Book;
+    font-family: $Regular;
     font-size: 2rem;
     display: flex;
     justify-content: space-between;
@@ -108,12 +99,12 @@ main .planete img {
 
 .bouton {
     color: white;
-    font-family: $Book;
+    font-family: $Regular;
     font-size: 2rem;
-    width: 360px;
-    height: 69px;
+    width: calc(100% - 60px);
     text-align: center;
     margin: auto;
+    margin-bottom: 3rem;
 
     &__propulser {
         background: #010101;
@@ -122,6 +113,7 @@ main .planete img {
         padding-left: 30px;
         padding-right: 30px;
         margin-bottom: 30px;
+        font-size: 24px;
     }
     &__ajouter {
         background: #2C2C32;
@@ -129,5 +121,6 @@ main .planete img {
         padding: 20px;
         padding-left: 30px;
         padding-right: 30px;
+        font-size: 24px;
     }
 }
