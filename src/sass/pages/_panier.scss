@@ -1,0 +1,133 @@
+@use '../helpers/colors' as *;
+@use '../helpers/breakpoints' as *;
+@use '../components/button' as *;
+@use '../base/typography' as *;
+
+
+.panier{
+    background: linear-gradient(
+        178.25deg, 
+        rgba(0, 0, 0, 0.96) 2.96%,
+         rgba(43, 13, 108, 0.75) 50.47%
+         );
+    height: 100vh;
+    background-repeat: no-repeat;     
+}
+
+.menu {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    &__return {
+        position: absolute;
+        left: 31px;
+        top: 40px;
+    }
+    &__logo {
+        width: 49px;
+        height: 63px;
+        left: 356px;
+        top: 20px;;
+        margin: 20px;
+    }
+}
+
+main .planete {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 140px;
+    height: 40px;
+    left: 22px;
+    top: 114px;
+    background: #7F5AF0;
+    border-radius: 22.5px;
+    color: white;
+    font-family: $light;
+    margin-left: 20px;
+}
+main .planete img {
+    width: 29px;
+    height: 28px;
+    left: 58px;
+    top: 120px;
+}
+
+.plat {
+    color: white;
+    font-family: $light;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.ligne {
+    border-bottom:2px solid #FFC857;
+    width: 80%;
+    margin: auto;
+}
+
+.recapitulatif {
+    color: white;
+    font-family: $Book;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    font-size: 2rem;
+}
+
+.recapitulatif2 {
+    color: white;
+    font-family: $Book;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    font-size: 1.5rem;
+}
+.recapitulatif2 div {
+    font-size: 1.2rem;
+    width: 142px;
+    height: 32px;
+    background: rgba(217, 217, 217, 0.5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tarif-total {
+    color: white;
+    font-family: $Book;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    margin-bottom: 80px;
+}
+
+.bouton {
+    color: white;
+    font-family: $Book;
+    font-size: 2rem;
+    width: 360px;
+    height: 69px;
+    text-align: center;
+    margin: auto;
+
+    &__propulser {
+        background: #010101;
+        border-radius: 20px;
+        padding: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom: 30px;
+    }
+    &__ajouter {
+        background: #2C2C32;
+        border-radius: 20px;
+        padding: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
