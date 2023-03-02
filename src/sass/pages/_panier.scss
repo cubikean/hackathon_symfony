@@ -114,6 +114,10 @@ main .planete img {
         padding-right: 30px;
         margin-bottom: 30px;
         font-size: 24px;
+        a{
+            color: white;
+            text-decoration: none;
+        }
     }
     &__ajouter {
         background: #2C2C32;
@@ -122,5 +126,9 @@ main .planete img {
         padding-left: 30px;
         padding-right: 30px;
         font-size: 24px;
+        a{
+            color: white;
+            text-decoration: none;
+        }
     }
 }
