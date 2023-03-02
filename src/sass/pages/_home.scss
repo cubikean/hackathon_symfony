@@ -1,0 +1,7 @@
+@use '../helpers/colors' as *;
+@use '../helpers/breakpoints' as *;
+@use '../components/button' as *;
+
+.btn{
+    @include btn();
+}
