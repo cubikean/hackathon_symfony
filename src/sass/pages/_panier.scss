@@ -43,7 +43,7 @@ main .planete {
     background: #7F5AF0;
     border-radius: 22.5px;
     color: white;
-    font-family: $light;
+    font-family: $Light;
     margin-left: 20px;
 }
 main .planete img {
@@ -55,7 +55,7 @@ main .planete img {
 
 .plat {
     color: white;
-    font-family: $light;
+    font-family: $Light;
     font-size: 1.2rem;
     display: flex;
     justify-content: space-between;
@@ -70,7 +70,7 @@ main .planete img {
 
 .recapitulatif {
     color: white;
-    font-family: $Book;
+    font-family: $Regular;
     display: flex;
     justify-content: space-between;
     margin: 30px;
@@ -79,7 +79,7 @@ main .planete img {
 
 .recapitulatif2 {
     color: white;
-    font-family: $Book;
+    font-family: $Regular;
     display: flex;
     justify-content: space-between;
     margin: 30px;
@@ -98,7 +98,7 @@ main .planete img {
 
 .tarif-total {
     color: white;
-    font-family: $Book;
+    font-family: $Regular;
     font-size: 2rem;
     display: flex;
     justify-content: space-between;
@@ -108,7 +108,7 @@ main .planete img {
 
 .bouton {
     color: white;
-    font-family: $Book;
+    font-family: $Regular;
     font-size: 2rem;
     width: 360px;
     height: 69px;
