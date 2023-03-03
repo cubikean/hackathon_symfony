@@ -1,0 +1,13 @@
+@use "../helpers/colors" as *;
+@use "../helpers/breakpoints" as *;
+@use "../components/button" as *;
+@use "../base/typography" as *;
+
+.suivi_main{
+
+    .menu_suivi{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
