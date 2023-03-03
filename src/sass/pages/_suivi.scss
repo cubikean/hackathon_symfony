@@ -4,10 +4,50 @@
 @use "../base/typography" as *;
 
 .suivi_main{
-
+    
     .menu_suivi{
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+        padding-left: 1rem;
+    padding-right: 1rem;
+    }
+
+    .suivi_head{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 1rem;
+    padding-right: 1rem;
+        p{
+            color: white;
+            font-family: $Regular
+        }
+        
+        h3{
+            color: white;
+            font-family: $Regular;
+            font-size: 30px;
+        }
+    }
+
+    .suivi_map{
+        img{
+            width: 100vw;
+            margin-top: 20px;
+        }
+    }
+
+    .suivi_sebil{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 300px;
+        p{
+            color:white;
+            font-family: $Regular;
+        }
     }
 }
