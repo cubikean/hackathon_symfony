@@ -132,3 +132,98 @@ main .planete img {
         }
     }
 }
+
+.checkout{
+    height: 0px;
+    width: 100%;
+    background-color: $grey;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    transition: all .3s ease-in-out;
+    position: fixed;
+    bottom: 0;
+
+    &--active{
+        height: 60vh;
+    }
+
+    .total, .taxe{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px;
+        h2{
+            color: white;
+            font-size: 22px;
+        }
+        span{
+            color: white;
+            font-size: 22px;
+        }
+    }
+    .total{
+        padding-bottom: 0px;
+    }
+    .taxe{
+        padding-top: 15px;
+        h2{
+            font-size: 18px;
+        }
+        span{
+            font-size: 18px;
+        }
+    }
+    .method{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 30px;
+
+        h2{
+            color: white;
+            font-size: 18px;
+        }
+    }
+    form{
+        padding: 0 30px;
+        margin-bottom: 30px;
+        .pay{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid $violet;
+            margin-bottom: 10px;
+        }
+        label{
+            color: white;
+            font-size: 18px;
+            font-family: $Light;
+            width: 100%;
+        }
+        .confirm{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 12px;
+            label{
+                font-size: 14px;
+            }
+        }
+        button{
+            background-color: $violet;
+            border-radius: 50px;
+            border: none;
+            color: white;
+            font-size: 16px;
+            padding: 12px 24px;
+            text-align: center;
+            font-family: $Light;
+            width: fit-content;
+            margin-inline: auto;
+            display: flex;
+            margin-top: 20px;
+        }
+    }
+}
