@@ -2,11 +2,14 @@ console.log('here');
 
 const btnMenu = document.querySelector('.main-menu')
 
+if (btnMenu){
+
 btnMenu.addEventListener('click', ()=>{
 
     btnMenu.classList.toggle('main-menu--active')
 
 })
+}
 
 function change() {
  
@@ -36,3 +39,23 @@ function change() {
     break;
     }
     }
+
+const paiment = document.querySelector('.checkout')
+const bouton__propulser = document.querySelector('.bouton__propulser')
+
+if (paiment){
+bouton__propulser.addEventListener('click', (e)=>{
+    e.preventDefault();
+    paiment.classList.toggle('checkout--active')
+
+})
+}
+
+const btnForm = document.querySelector('form button')
+
+if(btnForm){
+    btnForm.addEventListener('click', (e)=>{
+    e.preventDefault();
+    paiment.classList.toggle('checkout--active')
+    })
+}
