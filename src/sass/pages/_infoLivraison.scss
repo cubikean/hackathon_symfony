@@ -1,0 +1,62 @@
+@use "../helpers/colors" as *;
+@use "../helpers/breakpoints" as *;
+@use "../components/button" as *;
+@use "../base/typography" as *;
+
+.information, .adresse, .livraison, .save-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-direction: column;
+}
+
+h2{
+  color: white;
+  margin: 25px 0;
+  font-size: 18px;
+  font-family: $Regular;
+}
+
+.adresse, .livraison{
+  h2{
+    align-self: flex-start;
+    padding-left: 20px;
+  }
+}
+
+input, textarea{
+  border-radius: 50px;
+  width: 80%;
+  background-color: rgba($color: #D9D9D9, $alpha: .5);
+  border: none;
+  padding: 12px; 
+}
+textarea{
+  border-radius: 10px;
+}
+
+.save{
+  margin-top: 20px;
+  background: #010101;
+  border-radius: 20px;
+  width: 80%;
+  border: none;
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a{
+      color: white;
+      text-decoration: none;
+  }
+}
+
+::placeholder{
+  color: rgba($color: #fff, $alpha: .5);
+}

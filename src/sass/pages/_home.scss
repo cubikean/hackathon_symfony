@@ -1,7 +1,183 @@
 @use '../helpers/colors' as *;
 @use '../helpers/breakpoints' as *;
 @use '../components/button' as *;
+@use '../base/typography' as *;
+
+
+body{
+    background: linear-gradient(178.25deg, rgba(0, 0, 0, 0.96) 2.96%, rgba(43, 13, 108, 1) 50.47%);
+}
+
+p, h2, h3, ::placeholder, span{
+    font-family: $Light;
+}
+
+main {
+    padding-top: 50px;
+
+    .categories{
+        padding-left: 20px;
+
+
+        h2{
+            color: white;
+            font-size: 20px;
+
+
+        }
+
+        &-container{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 12px;
+            gap: 12px;
+            overflow: scroll;
+            scroll-snap-type: x mandatory;
+
+            &_single{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                padding: 10px;
+                border-radius: 40px;
+                background-color: $grey;
+                color: white;
+                min-width: fit-content;
+                scroll-snap-align: start;
+                
+               
+                &--active{
+                    background-color: $violet;
+                }
+
+                img{
+                    width: 24px
+                }
+            }
+        }
+
+    }
+
+    .popular{
+        padding-left: 20px;
+        margin-top: 40px;
+
+        h2{
+            color: white;
+            font-size: 20px;
+
+        }
+
+        &-container{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 12px;
+            gap: 12px;
+            overflow: scroll;
+            scroll-snap-type: x mandatory;
+
+            &_single{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                flex: 0 1 40%;
+                min-width: 40%;
+                scroll-snap-align: start;
+                
+                &_content{
+                    background-color: $grey;
+                    padding: 10px;
+                    padding-top: 50px;
+                    border-radius: 10px;
+                    width: 100%;
+                    transform: translateY(-50%);
+                    z-index: -1;
+                }
+
+                img{
+                    width: 120px
+                }
+
+                p{
+                    color: white
+                }
+
+                .price{
+                    margin-top: 10px;
+                    color: $yellow
+                }
+            }
+        }
+
+    }
+
+    .other{
+        padding: 0 20px;
+        margin-top: 40px;
+
+        h2{
+            color: white;
+            font-size: 20px;
+
+        }
+
+        &-container{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            margin-top: 12px;
+            gap: 20px;
+            overflow: scroll;
+            scroll-snap-type: x mandatory;
+
+            &_single{
+                display: flex;
+                align-items: stretch;
+                justify-content: space-between;
+                background: linear-gradient(120deg, rgba(44,44,50,1) 50%, rgba(127,90,240,1) 50%);
+                width: 100%;
+                padding: 20px;
+                border-radius: 10px;
+
+                &_content{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                }
+                
+                &_image{
+                    img{
+                        width: 120px
+                    }
+                }
+                
+            
+               
+
+                p{
+                    color: white
+                }
+
+                .price{
+                    margin-top: 10px;
+                    color: $yellow
+                }
+            }
+        }
+
+    }
+}
+
+.spacer{
+    height: 50vh;
+}
 
 .btn{
     @include btn();
 }
+

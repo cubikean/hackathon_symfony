@@ -1,0 +1,229 @@
+@use '../helpers/colors' as *;
+@use '../helpers/breakpoints' as *;
+@use '../components/button' as *;
+@use '../base/typography' as *;
+
+
+
+.menu {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    &__return {
+        position: absolute;
+        left: 31px;
+        top: 40px;
+    }
+    &__logo {
+        width: 49px;
+        height: 63px;
+        left: 356px;
+        top: 20px;;
+        margin: 20px;
+    }
+}
+
+main .planete {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 140px;
+    height: 40px;
+    left: 22px;
+    top: 114px;
+    background: #7F5AF0;
+    border-radius: 22.5px;
+    color: white;
+    font-family: $Light;
+    margin-left: 20px;
+}
+main .planete img {
+    width: 29px;
+    height: 28px;
+    left: 58px;
+    top: 120px;
+}
+
+.plat {
+    color: white;
+    font-family: $Light;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.ligne {
+    border-bottom:2px solid #FFC857;
+    width: 80%;
+    margin: auto;
+}
+
+.recapitulatif {
+    color: white;
+    font-family: $Regular;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    font-size: 2rem;
+}
+
+.recapitulatif2 {
+    color: white;
+    font-family: $Regular;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    font-size: 1.5rem;
+}
+.recapitulatif2 div {
+    font-size: 1.2rem;
+    width: 142px;
+    height: 32px;
+    background: rgba(217, 217, 217, 0.5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tarif-total {
+    color: white;
+    font-family: $Regular;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    margin-bottom: 80px;
+}
+
+.bouton {
+    color: white;
+    font-family: $Regular;
+    font-size: 2rem;
+    width: calc(100% - 60px);
+    text-align: center;
+    margin: auto;
+    margin-bottom: 3rem;
+
+    &__propulser {
+        background: #010101;
+        border-radius: 20px;
+        padding: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom: 30px;
+        font-size: 24px;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+    &__ajouter {
+        background: #2C2C32;
+        border-radius: 20px;
+        padding: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 24px;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+.checkout{
+    height: 0px;
+    width: 100%;
+    background-color: $grey;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    transition: all .3s ease-in-out;
+    position: fixed;
+    bottom: 0;
+
+    &--active{
+        height: 60vh;
+    }
+
+    .total, .taxe{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px;
+        h2{
+            color: white;
+            font-size: 22px;
+        }
+        span{
+            color: white;
+            font-size: 22px;
+        }
+    }
+    .total{
+        padding-bottom: 0px;
+    }
+    .taxe{
+        padding-top: 15px;
+        h2{
+            font-size: 18px;
+        }
+        span{
+            font-size: 18px;
+        }
+    }
+    .method{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 30px;
+
+        h2{
+            color: white;
+            font-size: 18px;
+        }
+    }
+    form{
+        padding: 0 30px;
+        margin-bottom: 30px;
+        .pay{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid $violet;
+            margin-bottom: 10px;
+        }
+        label{
+            color: white;
+            font-size: 18px;
+            font-family: $Light;
+            width: 100%;
+        }
+        .confirm{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 12px;
+            label{
+                font-size: 14px;
+            }
+        }
+        button{
+            background-color: $violet;
+            border-radius: 50px;
+            border: none;
+            color: white;
+            font-size: 16px;
+            padding: 12px 24px;
+            text-align: center;
+            font-family: $Light;
+            width: fit-content;
+            margin-inline: auto;
+            display: flex;
+            margin-top: 20px;
+        }
+    }
+}
